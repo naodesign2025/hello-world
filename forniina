@@ -1,0 +1,20 @@
+<!DOCTYPE  html>
+<html lang="ja">
+<head>
+<meta chaeset="UTF-8">
+<title>今日の練習</title>	
+<style>
+h1{color: red; font-size 50px; background: pink; text-align: center;}
+p{color: blue; font-size24px;}
+h2{ color: green; }
+</style>
+</head>
+<body>
+<h1>ハロー虹愛!!</h1>
+<p>君は素晴らしい世界に産まれたんだよ!!</p>
+<h2>地球はすごい綺麗な星なんだよ!!</h2>
+
+
+
+</body>
+</html>
