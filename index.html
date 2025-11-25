@@ -1,19 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-<meta charset="UTF-8">
-  <style>
-    body{color: red;}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAOdesign&webDevelopmentOffice</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif; background-color: #f5f5f5; }
+        .header { background: linear-gradient(to right, #0099ff, #00b4ff); padding: 30px 40px; text-align: center; }
+        .header h1 { font-size: 48px; font-weight: 900; color: #000; letter-spacing: -1px; }
+        .subheader { background-color: #fff; padding: 20px 40px; border-bottom: 2px solid #e0e0e0; }
+        .subheader p { font-size: 20px; font-weight: 500; color: #000; }
+        .container { max-width: 1400px; margin: 60px auto; padding: 0 40px; display: flex; gap: 40px; align-items: flex-start; }
+        .left-box { background: linear-gradient(135deg, #0099ff, #00b4ff); width: 380px; height: 200px; border-radius: 8px; flex-shrink: 0; }
+        .right-card { background: linear-gradient(135deg, #0099ff, #00b4ff); padding: 40px; border-radius: 30px; flex: 1; max-width: 600px; margin-left: auto; }
+        .badge { background-color: #ffd700; color: #000; font-size: 22px; font-weight: 700; padding: 12px 30px; border-radius: 25px; display: inline-block; margin-bottom: 30px; }
+        .service-list { list-style: none; }
+        .service-list li { color: #fff; font-size: 22px; font-weight: 500; margin-bottom: 20px; padding-left: 20px; position: relative; }
+        .service-list li::before { content: '•'; position: absolute; left: 0; color: #fff; font-size: 28px; }
+        @media (max-width: 1024px) { .container { flex-direction: column; align-items: center; } .left-box { width: 100%; max-width: 380px; } .right-card { max-width: 100%; margin-left: 0; } }
+        @media (max-width: 768px) { .header h1 { font-size: 32px; } .subheader p { font-size: 16px; } .badge { font-size: 18px; } .service-list li { font-size: 18px; } }
     </style>
-<title>start</title>
 </head>
-
-
 <body>
-<h1>
-ハローワールド!!
-  <p>NAOweb制作練習中でし11_22</p>
-</h1>
-  
+    <header class="header">
+        <h1>NAOdesign&webDevelopmentOffice</h1>
+    </header>
+    
+    <div class="subheader">
+        <p>webデザインとwebサイト制作のサービスです</p>
+    </div>
+    
+    <div class="container">
+        <div class="left-box"></div>
+        
+        <div class="right-card">
+            <div class="badge">設計からコーディング公開まで</div>
+            <ul class="service-list">
+                <li>ウェブデイン</li>
+                <li>各種ウェブサイト制作</li>
+                <li>サーバー運用</li>
+                <li>セキュリティ</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
