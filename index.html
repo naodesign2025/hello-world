@@ -2,12 +2,32 @@
 <html lang="ja">
 <head>
 	<meta charset="UTF-8">
-	<title>今日のコーディング練習</title>
+	<title>今日のコーディング</title>
+	<style>
+		h1 {
+			color: blue;
+			text-align: center;
+		}
+		button {
+			background-color: blue;
+			color: white;
+			padding: 10px 20px;
+			font-size: 16px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	</style>
 </head>
 <body>
-	<h1>ハローワールド!!!</h1>
+	<h1 id="title">ハローNAO!!!</h1>
+	<button onclick="changeColor()">色を変える！</button>
+	
 	<script>
-alert("NAO初めてのjavascriptに挑戦!!");
+		function changeColor() {
+			let title = document.getElementById("title");
+			title.style.color = "red";
+		}
 	</script>
 </body>
 </html>
