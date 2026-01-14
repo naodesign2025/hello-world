@@ -1,0 +1,13 @@
+  body{background-color : black;}
+	h1 {
+    /* グラデーション（左から右） */
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+
+    /* クリッピングマスクの設定 */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+    /* 下地が文字の幅にぴったり合うようにする */
+    display: table; 
+    body{background-color : black;}
