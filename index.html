@@ -2,15 +2,23 @@
 <html lang="ja">
 <head>
 	<meta charset="UTF-8">
+	<title>クリッピングマスクの学習</title>
 	<style>
-		h1{color: white;}
-body {background-color: black;}
-</style>
-
-	<title>今日のコーディング練習</title>
-
+		h1{
+			/*ステップ1*/
+			background: linear-gradient(to right, #4facfe, #00f2fe);
+			/*ステップ2*/
+			-webkit-background-clip: text;
+			background-clip: text;
+			/*ステップ3*/
+			color: transparent;
+		}
+		body{
+			background-color: black;
+		}
+	</style>
 </head>
 <body>
-	<h1>ハローワールドNAO!!!</h1>
+	<h1>クリッピングマスクの学習をしています。</h1>
 </body>
 </html>
