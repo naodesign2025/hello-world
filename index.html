@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 	<meta charset="UTF-8">
-	<title>クリッピングマスクの学習</title>
+	<title>TRiMworksIndex</title>
 	<style>
 		h1{
 			/*ステップ1*/
@@ -12,27 +12,71 @@
 			background-clip: text;
 			/*ステップ3*/
 			color: transparent;
-			font-size: 120px;
-			text-align: center;
+			font-size: 30px;
+			border-bottom: 2px solid white;
+			display: inline-block;
 			font-weight: bold;
 			font-family: meiryo, sans-serif;
+			margin-top: 30px;
 		}
 		
 		h2{
 			color: white;
-			font-size: 50px;
+			font-size: 20px;
 			text-align: center;
 			font-weight: bold;
 			font-family: meiryo, sans-serif;
 		}
 		
+		h3{
+			color: white;
+			font-size: 18px;
+			font-weight: bold;
+			font-family: meiryo, sans-serif;
+		}
+		
+		.profile-image{
+			display: block;
+			margin: 20px auto;
+			max-width: 300px;
+			border-radius: 10px;
+			border: 3px solid white;
+		}
+
+		/* プロフィール文のスタイル */
+		.profile-text {
+			color: white;
+			font-family: meiryo, sans-serif;
+			font-size: 16px;
+			line-height: 1.8;
+			max-width: 500px;
+			margin: 20px auto;
+			text-align: center;
+			white-space: pre-wrap; /* 改行を有効にする設定 */
+			padding: 0 20px;
+		}
+		
 		body{
 			background-color: black;
+			text-align: center;
+			margin: 0;
+			padding-bottom: 100px;
 		}
 	</style>
 </head>
 <body>
-	<h1>TRiM</h1>
-	<h2>NAOフルスタックエンジニアに向けて現在webprograming学習中</h2>
-</body>
+	<h1>TRiM works</h1>
+	<h2>TRiMengineerings</h2>
+	<h3>エンジニアプロフィール</h3>
+	
+	<img src="NAO.png" alt="NAOのプロフィール" class="profile-image">
+	
+	<div class="profile-text">
+エンジニアプロフィールNAO(ナオ)
+元シンガーソングライター。
+元webでざいなー→アーティスト→げんざいは古スタックエンジニアに向け学習中→さいばーセキュリティーエンジニアへとばく進中。
+エンターキーで改行すると、そのまま画面にも反映されます！
+自由に書いてみてくださいね。
+	</div>
+	</body>
 </html>
