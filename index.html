@@ -1,92 +1,74 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Index</title>
-	<style>
-		body {
-			background-color: black;
-			text-align: center;
-			margin: 0;
-			padding-bottom: 50px;
-			color: white;
-			font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", meiryo, sans-serif;
-			overflow-x: hidden;
-		}
-		h1 {
-			background: linear-gradient(to right, #4facfe, #8e2de2, #f093fb);
-			-webkit-background-clip: text;
-			background-clip: text;
-			color: transparent;
-			font-size: clamp(24px, 8vw, 30px);
-			border-bottom: 2px solid white;
-			display: inline-block;
-			font-weight: bold;
-			margin-top: 30px;
-			padding: 0 10px;
-		}
-		
-		h2 {
-			font-size: clamp(16px, 5vw, 20px);
-			font-weight: bold;
-			margin-top: 10px;
-		}
-		
-		h3 {
-			font-size: 18px;
-			font-weight: bold;
-			margin-top: 40px;
-		}
-		
-		.profile-image {
-			display: block;
-			margin: 20px auto;
-			width: 80%;
-			max-width: 300px;
-			height: auto;
-			border-radius: 10px;
-			border: 3px solid white;
-		}
-		
-		.profile-text-box {
-			border: 2px solid white;
-			border-radius: 15px;
-			font-size: 16px;
-			line-height: 1.8;
-			width: 90%;
-			max-width: 500px;
-			margin: 20px auto;
-			text-align: center;
-			white-space: pre-wrap;
-			padding: 20px;
-			background-color: rgba(255, 255, 255, 0.05);
-			box-sizing: border-box;
-		}
-	</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>いいねボタン</title>
+  <style>
+    body {
+      background-color: black;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      color: white;
+      text-align: center;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+    }
+
+    .like-container {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .like-button {
+      background-color: #1E90FF;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .like-button:hover {
+      background-color: #4169E1;
+    }
+
+    .like-button:active {
+      transform: scale(0.95);
+    }
+
+    .like-count {
+      color: white;
+      font-size: 24px;
+      margin-top: 15px;
+    }
+  </style>
 </head>
 <body>
-	<h1>My Profile</h1>
-	
-	<img class="profile-image" src="NAO.png" alt="プロフィール画像">
-	
-	<h2>自己紹介</h2>
-	
-	<div class="profile-text-box">
-		NAOのポートフォリオサイトへようこそ！
+  <h1>いいねしてね！</h1>
+  
+  <div class="like-container">
+    <button class="like-button" onclick="addLike()">👍 いいね!</button>
+    <div class="like-count">いいね数: <span id="count">0</span></div>
+  </div>
 
-音楽からコードへ。元シンガーソングライターのNAOです。
-現在は新たな表現手段としてプログラミングに挑戦中。
-日々の学習成果や制作物をここで発信していきます。
-	</div>
-	
-	<h3>スキル・経験</h3>
-	
-	<div class="profile-text-box">
-	• プログラミング(フルスタック）
-		• デザイン、サイバーセキュリティー
-		• 表現（楽曲制作小説執筆
-	</div>
+  <script>
+    let likeCount = 0;
+
+    function addLike() {
+      likeCount++;
+      document.getElementById('count').textContent = likeCount;
+    }
+  </script>
 </body>
 </html>
