@@ -2,18 +2,36 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>0204の基礎練習</title>
     <style>
-        h1 { color: blue; }
+        body {
+            margin: 0;
+            padding: 16px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            font-size: 18px;
+        }
+        h1 {
+            color: blue;
+            font-size: 32px;
+        }
+        #button {
+            background-color: blue;
+            color: white;
+            font-size: 18px;
+            padding: 8px 16px;
+            margin-left: 8px;
+            border-radius: 6px;
+        }
     </style>
 </head>
 <body>
     <h1>hello!!NAO!!!</h1>
-    <button id="button" style="background-color: blue; color: white;">押して！！</button>
+    <button id="button">押して！！</button>
 
     <script>
         document.getElementById("button").onclick = function() {
-            alert("押してくれてありがとう！！");
+            alert("押してくれてありがとう★");
         }
     </script>
 </body>
