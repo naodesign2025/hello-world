@@ -1,129 +1,116 @@
-1  <!DOCTYPE html>
-2  <html lang="ja">
-3  <head>
-4  	<meta charset="UTF-8">
-5  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-6  	<title>Index</title>
-7  	<style>
-8  		body {
-9  			background-color: black;
-10 			text-align: center;
-11 			margin: 0;
-12 			padding-bottom: 50px;
-13 			color: white;
-14 			font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", meiryo, sans-serif;
-15 			overflow-x: hidden;
-16 		}
-17 		h1 {
-18 			background: linear-gradient(to right, #4facfe, #8e2de2, #f093fb);
-19 			-webkit-background-clip: text;
-20 			background-clip: text;
-21 			color: transparent;
-22 			font-size: clamp(24px, 8vw, 30px);
-23 			border-bottom: 2px solid white;
-24 			display: inline-block;
-25 			font-weight: bold;
-26 			margin-top: 30px;
-27 			padding: 0 10px;
-28 		}
-29 		h2 {
-30 			font-size: clamp(16px, 5vw, 20px);
-31 			font-weight: bold;
-32 			margin-top: 10px;
-33 		}
-34 		h3 {
-35 			font-size: 18px;
-36 			font-weight: bold;
-37 			margin-top: 40px;
-38 		}
-39 		.profile-image {
-40 			display: block;
-41 			margin: 20px auto;
-42 			width: 80%;
-43 			max-width: 300px;
-44 			height: auto;
-45 			border-radius: 10px;
-46 			border: 3px solid white;
-47 		}
-48 		.profile-text-box {
-49 			border: 2px solid white;
-50 			border-radius: 15px;
-51 			font-size: 16px;
-52 			line-height: 1.8;
-53 			width: 90%;
-54 			max-width: 500px;
-55 			margin: 20px auto;
-56 			text-align: center;
-57 			white-space: pre-wrap;
-58 			padding: 20px;
-59 			background-color: rgba(255, 255, 255, 0.05);
-60 			box-sizing: border-box;
-61 		}
-62 		.work-link {
-63 			display: inline-block;
-64 			color: #4facfe;
-65 			text-decoration: none;
-66 			margin: 6px 0;
-67 			padding: 8px 12px;
-68 			border: 1px solid #4facfe;
-69 			border-radius: 8px;
-70 			transition: background 0.2s, color 0.2s;
-71 		}
-72 		.work-link:hover {
-73 			background: rgba(79, 172, 254, 0.2);
-74 			color: #8e2de2;
-75 		}
-76 		.twitter-section {
-77 			margin: 40px auto;
-78 			width: 90%;
-79 			max-width: 500px;
-80 		}
-81 	</style>
-82 </head>
-83 <body>
-84 	<h1>My Profile</h1>
-85 	
-85 	<img class="profile-image" src="NAO.png" alt="プロフィール画像">
-86 	
-87 	<h2>自己紹介</h2>
-88 	
-89 	<div class="profile-text-box">
-90 		NAOのポートフォリオサイトへようこそ！！
-91 		元シンガーソングライターのNAOです。
-92 		
-93 		日々の学習の成果をここで公開して行きたいと思います。
-94 	</div>
-95 	
-96 	<h3>スキル・経験</h3>
-97 	
-98 	<div class="profile-text-box">
-99 		• プログラミング（フルスタック）
-100		• デザイン、サイバーセキュリティー
-101		• 表現（楽曲制作、小説執筆）
-102	</div>
-103	
-104	<h3>アーティストNAOとしての作品事例</h3>
-105	
-106	<div class="profile-text-box">
-107		<div style="margin-bottom: 10px;">
-108			<a class="work-link" href="https://music.apple.com/jp/album/the-scenery/585163308" target="_blank" rel="noopener noreferrer">THE SCENERY（アルバム）- Apple Music</a>
-109		</div>
-110		<div>
-111			<a class="work-link" href="https://music.apple.com/jp/song/intro/585163452" target="_blank" rel="noopener noreferrer">Intro - Apple Music</a>
-112		</div>
-113	</div>
-114	
-115	<h3>X（Twitter）</h3>
-116	
-117	<div class="twitter-section">
-118		<a class="twitter-timeline"
-119		   data-theme="dark"
-120		   data-height="400"
-121		   href="https://twitter.com/NAO_Primary">
-122			Tweets by NAO_Primary
-123		</a>
-124	</div>
-125	
-126	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-127 </body>
-128 </html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Index</title>
+	<style>
+		body {
+			background-color: black;
+			text-align: center;
+			margin: 0;
+			padding-bottom: 50px;
+			color: white;
+			font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", meiryo, sans-serif;
+			overflow-x: hidden;
+		}
+		h1 {
+			background: linear-gradient(to right, #4facfe, #8e2de2, #f093fb);
+			-webkit-background-clip: text;
+			background-clip: text;
+			color: transparent;
+			font-size: clamp(24px, 8vw, 30px);
+			border-bottom: 2px solid white;
+			display: inline-block;
+			font-weight: bold;
+			margin-top: 30px;
+			padding: 0 10px;
+		}
+		
+		h2 {
+			font-size: clamp(16px, 5vw, 20px);
+			font-weight: bold;
+			margin-top: 10px;
+		}
+		
+		h3 {
+			font-size: 18px;
+			font-weight: bold;
+			margin-top: 40px;
+		}
+		
+		.profile-image {
+			display: block;
+			margin: 20px auto;
+			width: 80%;
+			max-width: 300px;
+			height: auto;
+			border-radius: 10px;
+			border: 3px solid white;
+		}
+		
+		.profile-text-box {
+			border: 2px solid white;
+			border-radius: 15px;
+			font-size: 16px;
+			line-height: 1.8;
+			width: 90%;
+			max-width: 500px;
+			margin: 20px auto;
+			text-align: center;
+			white-space: pre-wrap;
+			padding: 20px;
+			background-color: rgba(255, 255, 255, 0.05);
+			box-sizing: border-box;
+		}
+		
+		.work-link {
+			display: inline-block;
+			color: #4facfe;
+			text-decoration: none;
+			margin: 6px 0;
+			padding: 8px 12px;
+			border: 1px solid #4facfe;
+			border-radius: 8px;
+			transition: background 0.2s, color 0.2s;
+		}
+		.work-link:hover {
+			background: rgba(79, 172, 254, 0.2);
+			color: #8e2de2;
+		}
+	</style>
+</head>
+<body>
+	<h1>My Profile</h1>
+	
+	<img class="profile-image" src="NAO.png" alt="プロフィール画像">
+	
+	<h2>自己紹介</h2>
+	
+	<div class="profile-text-box">
+		NAOのポートフォリオサイトへようこそ！！
+		元シンガーソングライターのNAOです。
+		
+		日々の学習の成果をここで公開して行きたいと思います。
+	</div>
+	
+	<h3>スキル・経験</h3>
+	
+	<div class="profile-text-box">
+		• プログラミング（フルスタック）
+		• デザイン、サイバーセキュリティー
+		• 表現（楽曲制作、小説執筆）
+	</div>
+	
+	<h3>アーティストNAOとしての作品事例</h3>
+	
+	<div class="profile-text-box">
+		<div style="margin-bottom: 10px;">
+			<a class="work-link" href="https://music.apple.com/jp/album/the-scenery/585163308" target="_blank" rel="noopener noreferrer">THE SCENERY（アルバム）- Apple Music</a>
+		</div>
+		<div>
+			<a class="work-link" href="https://music.apple.com/jp/song/intro/585163452" target="_blank" rel="noopener noreferrer">Intro - Apple Music</a>
+		</div>
+	</div>
+</body>
+</html>
